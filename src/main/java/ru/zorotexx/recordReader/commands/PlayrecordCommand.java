@@ -31,7 +31,7 @@ public class PlayrecordCommand implements CommandExecutor {
         String name = strings[0];
         boolean everytick = Boolean.parseBoolean(strings[1]);
 
-        ParticleRecordReader.ParticleSpawner spawner = ParticleRecordReader.read(new File(RecordReader.getPlugin(RecordReader.class).getDataFolder() + name + ".txt"))
+        ParticleRecordReader.ParticleSpawner spawner = ParticleRecordReader.read(new File(RecordReader.getPlugin(RecordReader.class).getDataFolder() + "/" + name + ".txt"))
                 .createSpawner(location.getX(), location.getY(), location.getZ());
 
         if (everytick) {

@@ -7,6 +7,9 @@ public final class RecordReader extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveResource("cursed_trap.txt", false);
+
+
         getCommand("playrecord").setExecutor(new PlayrecordCommand());
 
     }
