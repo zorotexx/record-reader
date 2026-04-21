@@ -2,7 +2,6 @@ name: record-reader
 version: '1.0'
 main: ru.zorotexx.recordReader.RecordReader
 api-version: '1.21'
-authors: By1337, zorotex
 description: плагин для воспроизведения записей частиц из мода BParser
 commands:
   playrecord: {}
